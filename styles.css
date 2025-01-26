@@ -1,0 +1,246 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #0f2027;
+    margin: 0;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .nav {
+    display: flex;
+    gap: 1rem;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #ffffff;
+    color: #0f2027;
+  }
+  .backgroud{
+    background: url(images/impressive-mountain-landscape-l.jpg);
+    
+  }
+  /* Hero Section */
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+  }
+  
+  .social-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #555; /* Сірий колір кружечків */
+    display: flex;
+ 
+
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Забираємо підкреслення */
+  }
+  
+  .social-circle:hover {
+    background-color: #999; /* Світліший колір при наведенні */
+  }
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background: linear-gradient(to top, #0f2027 0px, rgba(0, 0, 0, 0));
+  }
+  .intro {
+    text-align: center;
+    animation: fadeInRight 1s ease-out;
+  }
+  .intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .intro p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .hero-subtitle{
+    color: #ff8800;
+  }
+  .intro span {
+    font-style: italic;
+  }
+  .hero-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .hero-navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  /* Content */
+  .content {
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+  }
+ 
+  #section3 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  #section1 {
+    display: flex;
+
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  #section2{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .section-number {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #9d9d9dc9;
+  }
+  .section-content {
+    flex: 1;
+    padding:  4%;
+  }
+  .placeholder {
+    flex: 1;
+    background-color: #243b55;
+  }
+ 
+  /* Footer */
+  .footer {
+    padding: 2rem;
+    background-color: rgba(15, 32, 39, 0.9);
+
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-columns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .column {
+    flex: 1;
+    text-align: left;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1240px) {
+    .section {
+      flex-direction: column;
+    }
+    .placeholder {
+      margin-top: 1rem;
+    }
+    .footer-columns {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 720px) {
+    .hero {  
+      padding-top: 2rem;
+    }
+
+    header{
+        flex-direction: column;
+        align-items: center;  
+    }
+    .intro {
+      text-align: center;
+      margin-top: 5rem;
+    }
+    #section1{
+        display: flex;
+        flex-direction: column;
+    }
+    #section2 {
+        display: flex;
+        flex-direction: column;
+    }
+    #section3{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column
+    }
+  }
+  
+  @media (max-width: 270px) {
+    .header {
+        flex-direction: column;
+        align-items: center;  
+      gap: 0.5rem;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    .account {
+      align-self: flex-end;
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
