@@ -53,19 +53,22 @@
   }
   
   .social-circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #555; /* Сірий колір кружечків */
-    display: flex;
- 
+    width: 45px;
+    height: 45px;
 
+    display: flex;
     transition: background-color 0.3s ease;
     text-decoration: none; /* Забираємо підкреслення */
   }
   
-  .social-circle:hover {
-    background-color: #999; /* Світліший колір при наведенні */
+  #facebook{
+    background-image: url(images/Facebook.png);
+  }
+  #instagram{
+    background-image: url(images/Instagram.png);
+  }
+  #twitter{
+    background-image: url(images/Twitter.png);
   }
   .hero {
     height: 100vh;
